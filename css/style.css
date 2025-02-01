@@ -512,10 +512,10 @@ header{
     width: 25.5vh;
     height: 3vh;
     background-color: #fca311;
-    transform: skew(-15deg);
     position: absolute;
     top: 18vh;
-    left: 90vh;
+    left: 50%;
+    transform: skew(-15deg) translateX(-50%);
     z-index: 0;
   }
 
@@ -524,29 +524,18 @@ header{
     color: #777;
   }
 
-  .backcard{
-    width: 80%;
-    max-width: 700px;
-    height: 40vh;
-    max-height: 400px;
-    margin: 10vh auto;
-    border-radius: 40px;
-    background-color: #fff;
-    position: absolute;
-    left: 50%;
-    transform: translateX(-50%);
-    top: 25vh;
-  }
-
-
   .swiper{
     height: 60vh;
-    width: 50vw;
+    width: 90vw;
+    max-width: 1000px;
+    overflow: visible !important;
+    position: relative;
   }
 
   .swiper-pagination {
     position: relative;
-    margin-right: 7.5vw;
+    margin-top: 6vh;
+    margin-right: 165px;
   }
   .swiper-pagination .swiper-pagination-bullet {
     width: 10px;
@@ -567,7 +556,7 @@ header{
     max-width: 700px;
     height: 40vh;
     max-height: 400px;
-    margin: 10vh auto;
+    margin: 15vh auto;
     border-radius: 40px;
     position: relative;
     background-color: #fff;
@@ -709,6 +698,53 @@ header{
 
 }
 
+@media (max-width:1100px) {
+  .card{
+    width: 60%;
+    height: 100vh;
+  }
+
+  .card__img{
+    top: -10vh;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 180px;
+    height: 180px;
+  }
+
+  .card__img img{
+    width: 180px;
+    height: 180px;
+  }
+
+  .card__txt{
+    top: 60%;
+  }
+
+  .card__title{
+    text-align: center;
+    margin: 0 auto;
+  }
+
+  .card__info{
+    width: fit-content;
+    margin: 2vh auto;
+  }
+
+  .card__link{
+    display: block;
+    margin: 3vh auto;
+    width: 108px;
+    height: 35px;
+  }
+
+  .swiper-pagination{
+    margin-right: 22%;
+  }
+
+  
+}
+
 @media (max-width:900px) {
     /* header 시작 */
     .header__logo img{
@@ -732,7 +768,7 @@ header{
     .title__h2::after{
         height: 3vh;
         bottom: 2vh;
-        left: 32vh;
+        left: 27.7vh;
     }
 
     @keyframes highlighter {
@@ -757,6 +793,10 @@ header{
     .about__img{
       width: 120px;
       height: 120px;
+    }
+
+    .about__img img{
+      width: 120px;
     }
 
     .about__me{
@@ -862,7 +902,7 @@ header{
     .title__h2::after{
         height: 2vh;
         bottom: 1.2vh;
-        left: 19vh;
+        left: 16.5vh;
     }
 
     @keyframes highlighter {
@@ -924,6 +964,18 @@ header{
     .lic__box>h4{
       font-size: 11px;
       line-height: 160%;
+    }
+
+    .swiper-pagination{
+      display: none;
+    }
+
+    .card__title h2{
+      font-size: 20px;
+    }
+
+    .card__title p{
+      font-size: 16px;
     }
 
 }
