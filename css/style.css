@@ -978,5 +978,15 @@ header{
       font-size: 16px;
     }
 
+    .card__img{
+      top: -5vh;
+    }
+
+    .card__img,
+    .card__img img{
+      width: 120px;
+      height: 120px;
+    }
+
 }
 
