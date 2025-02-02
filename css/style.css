@@ -204,10 +204,10 @@ header{
 
     position: absolute;
     bottom: 3vh;
-    left: 38.8vh;
+    left: 45vh;
     z-index: 0;
     animation: highlighter 1s forwards ease-in-out;
-    animation-delay: 6.5s;
+    animation-delay: 0s;
   }
 
   @keyframes highlighter {
@@ -769,7 +769,7 @@ header{
     .title__h2::after{
         height: 3vh;
         bottom: 2vh;
-        left: 27.7vh;
+        left: 32vh;
     }
 
     @keyframes highlighter {
@@ -913,7 +913,7 @@ header{
     .title__h2::after{
         height: 2vh;
         bottom: 1.2vh;
-        left: 16.5vh;
+        left: 19.1vh;
     }
 
     @keyframes highlighter {
@@ -1000,3 +1000,9 @@ header{
 
 }
 
+@media (max-width:300px) {
+  .title__h2::after{
+    width: 0;
+    height: 0;
+  }
+}
