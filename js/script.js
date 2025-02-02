@@ -11,7 +11,7 @@ $(function () {
   const lines = [
     "소통으로 공감을 만들고,",
     "성실함으로 신뢰를 쌓는,",
-    "신입 디자이너 정다영 입니다."
+    "신입 웹디자이너 정다영 입니다."
   ];
 
   const typingElements = document.querySelectorAll(".title__typing");
