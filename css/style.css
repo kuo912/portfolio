@@ -207,7 +207,7 @@ header{
     left: 45vh;
     z-index: 0;
     animation: highlighter 1s forwards ease-in-out;
-    animation-delay: 0s;
+    animation-delay: 6.5s;
   }
 
   @keyframes highlighter {
