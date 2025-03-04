@@ -1023,6 +1023,10 @@ header{
     width: 48%;
   }
 
+  .port__title::after{
+    width: 0;
+  }
+  
   
 }
 
@@ -1030,27 +1034,6 @@ header{
   .title__h2::after{
     width: 0;
     height: 0;
-  }
-}
-
-@media (max-width:375px) and (max-height:667px){
-  .port__title::after{
-    width: 35vh;
-    top: 25vh;
-    left: 49%;
-  }
-}
-
-@media (max-width:390px) and (max-height:844px){
-  .port__title::after{
-    top: 20vh;
-  }
-}
-
-@media (max-width:390px) and (max-height:844px){
-  .port__title::after{
-    top: 23vh;
-    width: 31vh;
   }
 }
 
